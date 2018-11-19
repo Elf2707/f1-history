@@ -1,0 +1,46 @@
+@import '../../../../common/styles/variables/colors';
+
+.Container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  %intro-block {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 350px;
+
+    @media (min-width: 700px) {
+      padding: 48px;
+    }
+  }
+
+  .Left {
+    @extend %intro-block;
+    background-color: $cl_light1;
+    box-shadow: 0px 6px 50px -3px transparentize($cl_white, 0.3);
+    max-width: 950px;
+  }
+
+  .Right {
+    @extend %intro-block;
+  }
+
+  .AuthorNameText {
+    color: $cl_primary;
+    font-size: 1.4rem;
+    align-self: flex-end;
+  }
+
+  .QuoteText {
+    color: $cl_primary;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: justify;
+  }
+}

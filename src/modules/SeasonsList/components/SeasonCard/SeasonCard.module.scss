@@ -1,0 +1,36 @@
+@import '../../../../common/styles/variables/colors';
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  padding: 8px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  box-sizing: border-box;
+  box-shadow: 0 0 12px 0 $cl_black;
+  background-color: $cl_light1;
+  cursor: pointer;
+  text-decoration: none;
+  color: $cl_black;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 45px 0 $cl_primary, inset 0 0 32px 0 $cl_primary;
+  }
+
+  &:active {
+    background-color: darken($cl_light1, 10%);
+
+    @media (min-width: 850) {
+      box-shadow: 0 0 45px 0 $cl_primary, inset 0 0 32px 0 $cl_primary;
+    }
+  }
+}

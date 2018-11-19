@@ -1,0 +1,45 @@
+@import '../../../../common/styles/variables/colors';
+
+.Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 16px 0;
+  border-bottom: 1px solid transparentize($cl_secondary3, 0.6);
+
+  %ColumnCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .DateColumn {
+    @extend %ColumnCont;
+    width: 10rem;
+  }
+
+  .DateText {
+    color: $cl_primary;
+  }
+
+  .NameColumn {
+    @extend %ColumnCont;
+    width: 10rem;
+  }
+
+  .NameText {
+    color: $cl_primary;
+  }
+
+  .CircuitColumn {
+    @extend %ColumnCont;
+    flex-grow: 1;
+    align-items: flex-start;
+  }
+}
+
+.HighlightedRow {
+  box-shadow: inset 0 0 60px 0 transparentize($cl_secondary3, 0.2);
+}

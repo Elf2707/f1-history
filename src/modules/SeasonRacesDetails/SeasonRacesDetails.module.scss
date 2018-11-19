@@ -1,0 +1,21 @@
+@import '../../common/styles/variables/colors';
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 64px;
+
+  .Content {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $cl_light1;
+    box-shadow: 0 5px 42px 0 $cl_black;
+
+    @media (min-width: 850px) {
+      width: 65%;
+    }
+  }
+}

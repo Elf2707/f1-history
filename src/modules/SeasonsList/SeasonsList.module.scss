@@ -1,0 +1,10 @@
+.Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 80px;
+
+  @media (min-width: 850px) {
+    padding-top: 150px;
+  }
+}

@@ -1,0 +1,29 @@
+@import '../../../../common/styles/variables/colors';
+
+.Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+  margin-top: 70px;
+
+  @media (min-width: 850px) {
+    width: 65%;
+    margin-top: 24px;
+  }
+
+  h1 {
+    color: $cl_light1;
+    font-size: 22px;
+
+    @media (min-width: 850px) {
+      font-size: 2.6rem;
+    }
+
+    .SeasonIdText {
+      color: $cl_primary;
+    }
+  }
+}

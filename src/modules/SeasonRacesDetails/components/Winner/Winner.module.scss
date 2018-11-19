@@ -1,0 +1,35 @@
+@import '../../../../common/styles/variables/colors';
+
+.Container {
+  display: flex;
+  flex-direction: column;
+
+  .DriverDataText {
+    color: $cl_primary;
+    font-size: 16px;
+
+    @media (min-width: 850px) {
+      font-size: 1.2rem;
+    }
+
+    span {
+      color: $cl_light1;
+    }
+
+    .FamilyNameText {
+      color: $cl_primary;
+
+      &:after {
+        content: ' ';
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background-image: url('../../../../common/assets/images/cup.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 8px;
+      }
+    }
+  }
+}
