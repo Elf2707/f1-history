@@ -1,8 +1,20 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Install and run the project
 
-In the project directory, you can run:
+Clone repository
+
+### `git clone https://github.com/Elf2707/f1-history.git`
+
+Change directory
+
+### `cd f1-history`
+
+Install dependencies
+
+### `yarn install`
+
+Run the project:
 
 ### `yarn start`
 
