@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Simple React project to explore history of Formula One.
+Technologies: React, Mobx, Html, Sass/Scss, Jest
+
 ## Install and run the project
 
 Clone repository
