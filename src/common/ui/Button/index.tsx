@@ -9,7 +9,7 @@ interface Props {
 
 const Button = (props: Props) => {
   return (
-    <a href="" className={styles.Button} onClick={props.onClick}>
+    <a href="javascript:;" className={styles.Button} onClick={props.onClick}>
       {props.children}
     </a>
   )
